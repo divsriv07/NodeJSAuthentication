@@ -7,8 +7,8 @@ const User = require('../models/user');
 //tell passport to use new google auth strategy
 passport.use(new googleStrategy({
     //details obtained from google cloud console
-    clientID: process.env.GOOGLE_CLIENT_ID,
-    clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    clientID: "774647264252-pe8ua03hmvvv34j45bcb1cddgcqv95at.apps.googleusercontent.com",
+    clientSecret: "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",
     callbackURL: "/auth/google/callback",  
  }, function(accessToken, refreshToken, profile, done){
     //find the email in Database
